@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="style.css" />
     <title>Turčanová - hotel</title>
     <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+
       #home {
         background-image: url(img/hotel.jpg);
         background-size: cover;
@@ -20,21 +24,13 @@
         z-index: 100;
       }
       .historie-1 {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Martian Mono", monospace;
       }
 
       .historie-2 {
-        font-family: "Poppins", sans-serif;
+        font-family: "Lumanosi", cursive;
       }
     </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <section id="home" class="d-flex justify-content-center align-items-center">
@@ -153,6 +149,46 @@
               >
                 Virtuální prohlídka
               </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Popis prohlídky
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <video
+                        src="video.mp4"
+                        controls
+                        autoplay
+                        style="max-width: 100%; height: auto"
+                      ></video>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Zavřít
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -567,7 +603,7 @@
     </section>
     <!-- Sekce Kontakty -->
     <section id="kontakty" class="my-4">
-      <div class="row">
+      <div class="row bg-dark text-white">
         <div class="col-md-4 p-3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41671.57080830519!2d16.907787423137336!3d49.248476737140614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712e5547df50e19%3A0x7d4042ad694170a3!2sHotel%20Allvet!5e0!3m2!1scs!2scz!4v1689597537232!5m2!1scs!2scz"
