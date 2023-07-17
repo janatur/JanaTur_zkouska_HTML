@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Turčanová - hotel</title>
+  </head>
+  <body>
+    <section>
+      <div class="container col-6" id="header">
+        <div class="row m-auto">
+          <h1 class="text-center mt-5">Hotel Transylvánie</h1>
+          <h2 class="text-center">Vítejte! <em>Welcome!</em></h2>
+        </div>
+        <form class="container">
+          <h3 class="mb-3">Rezervace</h3>
+          <div class="row">
+            <div class="mb-3 col-12 col-lg-4">
+              <label for="Jmeno" class="form-label">Křestní jméno: </label>
+              <input
+                type="text"
+                name="Jmeno"
+                class="form-control"
+                placeholder="Křestní jméno"
+                aria-describedby="jmeno"
+              />
+            </div>
+            <div class="mb-3 col-12 col-lg-4">
+              <label for="prijmeni" class="form-label">Příjmení: </label>
+              <input
+                type="text"
+                name="Prijmeni"
+                class="form-control"
+                placeholder="Příjmení"
+                aria-describedby="prijmeni"
+              />
+            </div>
+            <div class="mb-3 col-12 col-lg-4">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                name="Email"
+                class="form-control"
+                placeholder="odrej.novak@seznam.cz"
+                id="email"
+                aria-describedby="email"
+              />
+            </div>
+            <div class="mb-3 col-12 col-lg-4">
+              <label for="tel" class="form-label">Tel.:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="+420-555-555-555"
+                id="tel"
+                aria-describedby="Email"
+              />
+            </div>
+            <div class="row">
+                
+              <div class="mb-3 form-group col-6 col-lg-6">
+                  <label for="pokoj">Pokoj</label>
+                  <select name="pokoj" id="pokoj" class="form-control">
+                      <option value="1">Jednolůžkový</option>
+                      <option value="2">Dvoulůžkový s manželskou postelí</option>
+                      <option value="3">Dvoulůžkový s oddělenými postelemi</option>
+                      <option value="4">Apartmán se dvěma loznicemi</option>
+                  </select>
+              </div>
+              <div class="mb-3 form-group col-6 col-lg-6">
+                <label for="osoby">Pocet osob</label>
+                <select name="osoby" id="osoby" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                    <option value="2">4</option>
+                </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-12 col-lg-6">
+                <label for="od" class="form-label">Od:</label>
+                <input type="date" class="form-control" placeholder="DD/MM/YYYY" id="od" aria-describedby="od">
+              </div>
+              <div class="mb-3 col-12 col-lg-6">
+                <label for="do" class="form-label">Do:</label>
+                <input type="date" class="form-control" placeholder="DD/MM/YYYY" id="do" aria-describedby="do">
+              </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="licence" checked>
+                <label class="form-check-label" for="licence">Souhlasím s použitím mých osobních údajů pro účely rezervace.</label>
+              </div>
+            <div class="py-3 px-2">
+                <button type="button" id="submit" class="btn btn-primary">Rezervovat</button>
+                <button type="button" id="btnprohlidka" class="btn btn-secondary" data-toggle="modal" data-target="#prohlidka">Virtuální prohlídka</button>
+            </div>
+        </form>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <a href="#" class="navbar-brand"><h3 class="mb-0">Hotel Transylvánie</h3></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#historie" class="nav-link">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cenik" class="nav-link">Ceník</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#galerie" class="nav-link">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontakty" class="nav-link">Kontakty</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </section>
+    <section id="historie">
+      <div class="container" >
+        <h2>Historie</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque enim. Saepe aspernatur ea odio fugiat eos iusto, in officia laboriosam voluptas, illo fugit incidunt accusantium a. Atque, commodi cumque!
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, molestias! Nam veniam in dolor soluta officia, delectus culpa quam magni voluptates quidem fugit aut facere consequuntur incidunt quaerat maiores mollitia.
+                </p>
+            </div>
+            <img src="img/historie.jpg" alt="historie" class="img-fluid d-none d-md-block col-lg-6">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="cenik">
+        <h2>Ceník</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 p-1">
+                <div class="card" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    <img src="img/single.jpg" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Jednolůžkový pokoj</h2>
+                        <div class="card-header">
+                            Informace
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum.</p>
+                          <hr>
+                          <ul class="list-group list-group-flush">
+                            <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet nocí.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 noc</a>
+                                  <a class="dropdown-item" href="#">2 noci</a>
+                                  <a class="dropdown-item" href="#">3 noci</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet osob.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 osoba</a>
+                                  <a class="dropdown-item" href="#">2 osoby</a>
+                                  <a class="dropdown-item" href="#">3 osoby</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Cena.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">500/noc/osoba </a>
+                                  <a class="dropdown-item" href="#">850/noc/2-osoby</a>
+                                  <a class="dropdown-item" href="#">1300/noc/3-osoby</a>
+                                </div>
+                              </li>
+                          </ul>
+                        <a href="" class="btn btn-lg btn-outline-primary">Klikni zde!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-1">
+                <div class="card" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                    <img src="img/double.jpg" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Dvoulůžkový pokoj s manželskou postelí</h2>
+                        <div class="card-header">
+                            Informace
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum.</p>
+                          <hr>
+                          <ul class="list-group list-group-flush">
+                            <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet nocí.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 noc</a>
+                                  <a class="dropdown-item" href="#">2 noci</a>
+                                  <a class="dropdown-item" href="#">3 noci</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet osob.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 osoba</a>
+                                  <a class="dropdown-item" href="#">2 osoby</a>
+                                  <a class="dropdown-item" href="#">3 osoby</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Cena.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">800/noc/osoba </a>
+                                  <a class="dropdown-item" href="#">1000/noc/2-osoby</a>
+                                  <a class="dropdown-item" href="#">1450/noc/3-osoby</a>
+                                </div>
+                              </li>
+                          </ul>
+                        <a href="" class="btn btn-lg btn-outline-primary">Klikni zde!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-1">
+                <div class="card" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+                    <img src="img/twin.jpg" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Dvoulůžkový pokoj s oddělenými postelemi2>
+                        <div class="card-header">
+                            Informace
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum.</p>
+                          <hr>
+                          <ul class="list-group list-group-flush">
+                            <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet nocí.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 noc</a>
+                                  <a class="dropdown-item" href="#">2 noci</a>
+                                  <a class="dropdown-item" href="#">3 noci</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet osob.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 osoba</a>
+                                  <a class="dropdown-item" href="#">2 osoby</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Cena.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">900/noc/osoba </a>
+                                  <a class="dropdown-item" href="#">1500/noc/2-osoby</a>
+                                </div>
+                              </li>
+                          </ul>
+                        <a href="" class="btn btn-lg btn-outline-primary">Klikni zde!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-1">
+                <div class="card" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+                    <img src="img/apartman.jpg" alt="" class="card-image-top">
+                    <div class="card-body">
+                        <h2 class="card-title">Apartmán</h2>
+                        <div class="card-header">
+                            Informace
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum.</p>
+                          <hr>
+                          <ul class="list-group list-group-flush">
+                            <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet nocí.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 noc</a>
+                                  <a class="dropdown-item" href="#">2 noci</a>
+                                  <a class="dropdown-item" href="#">3 noci</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Počet osob.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1 osoba</a>
+                                  <a class="dropdown-item" href="#">2 osoby</a>
+                                  <a class="dropdown-item" href="#">3 osoby</a>
+                                  <a class="dropdown-item" href="#">4 osoby</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown list-group-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                  Cena.
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">1000/noc/osoba </a>
+                                  <a class="dropdown-item" href="#">1650/noc/2-osoby</a>
+                                  <a class="dropdown-item" href="#">2000/noc/3-osoby</a>
+                                </div>
+                              </li>
+                          </ul>
+                        <a href="" class="btn btn-lg btn-outline-primary">Klikni zde!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="galerie">
+        <h2>Galerie</h2>
+      </div>
+    </section>
+    <section>
+      <div class="container" id="kontakty">
+        <h2>Kontakty</h2>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
